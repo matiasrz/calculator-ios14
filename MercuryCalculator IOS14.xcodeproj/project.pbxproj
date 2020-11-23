@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245F36CC256BBD0F006F2DA6 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F36CB256BBD0F006F2DA6 /* CalculatorLogic.swift */; };
 		2492AFA0256AE51F007749CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492AF9F256AE51F007749CC /* AppDelegate.swift */; };
 		2492AFA2256AE51F007749CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492AFA1256AE51F007749CC /* SceneDelegate.swift */; };
-		2492AFA4256AE51F007749CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492AFA3256AE51F007749CC /* ViewController.swift */; };
+		2492AFA4256AE51F007749CC /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2492AFA3256AE51F007749CC /* CalculatorController.swift */; };
 		2492AFA7256AE51F007749CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2492AFA5256AE51F007749CC /* Main.storyboard */; };
 		2492AFA9256AE523007749CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2492AFA8256AE523007749CC /* Assets.xcassets */; };
 		2492AFAC256AE523007749CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2492AFAA256AE523007749CC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		245F36CB256BBD0F006F2DA6 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		2492AF9C256AE51F007749CC /* MercuryCalculator IOS14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MercuryCalculator IOS14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2492AF9F256AE51F007749CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2492AFA1256AE51F007749CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2492AFA3256AE51F007749CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2492AFA3256AE51F007749CC /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
 		2492AFA6256AE51F007749CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2492AFA8256AE523007749CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2492AFAB256AE523007749CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245F36CF256BBD19006F2DA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				245F36CB256BBD0F006F2DA6 /* CalculatorLogic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2492AF93256AE51F007749CC = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +68,38 @@
 			children = (
 				2492AF9F256AE51F007749CC /* AppDelegate.swift */,
 				2492AFA1256AE51F007749CC /* SceneDelegate.swift */,
-				2492AFA3256AE51F007749CC /* ViewController.swift */,
-				2492AFA5256AE51F007749CC /* Main.storyboard */,
-				2492AFA8256AE523007749CC /* Assets.xcassets */,
-				2492AFAA256AE523007749CC /* LaunchScreen.storyboard */,
+				2492AFB6256AE596007749CC /* Controllers */,
+				245F36CF256BBD19006F2DA6 /* Models */,
+				2492AFB5256AE58D007749CC /* Views */,
+				2492AFB4256AE582007749CC /* Supporting Files */,
 				2492AFAD256AE523007749CC /* Info.plist */,
 			);
 			path = "MercuryCalculator IOS14";
+			sourceTree = "<group>";
+		};
+		2492AFB4256AE582007749CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2492AFA8256AE523007749CC /* Assets.xcassets */,
+				2492AFAA256AE523007749CC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2492AFB5256AE58D007749CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2492AFA5256AE51F007749CC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2492AFB6256AE596007749CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2492AFA3256AE51F007749CC /* CalculatorController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2492AFA4256AE51F007749CC /* ViewController.swift in Sources */,
+				245F36CC256BBD0F006F2DA6 /* CalculatorLogic.swift in Sources */,
+				2492AFA4256AE51F007749CC /* CalculatorController.swift in Sources */,
 				2492AFA0256AE51F007749CC /* AppDelegate.swift in Sources */,
 				2492AFA2256AE51F007749CC /* SceneDelegate.swift in Sources */,
 			);
